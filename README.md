@@ -48,13 +48,13 @@ Once packaged, the data may be collected or transmitted remotely, for example by
 
 The created **tar** archive can then either be copied off manually, via an external disc, or alternatively can be acquired remotely over the network, via commands such as **scp**. The **scp** command (run on the destination workstation) to do this is structured as follows:
 ```
-scp [username]@[IP address or hostname of target computer]:[path to tar archive on target machine] /[path/to/destination/folder/to/save/downloaded/tar/file]
+scp [filename].tar.gz [username]@[IP address or hostname of target computer]:[path to save location on target forensic device]
 ```
 For example:
 ```
-scp user1@server001:/home/user1/20260402_server001.tar.gz /home/investigator/Desktop
+scp 20260402_server001.tar.gz investigator@server001:/home/investigator/Desktop
 ```
-Again, the above example is based on an hypothetical case in which the computer being investigated is ***server001***, the case ref. is ***20260402***, and the local user account used is ***user1***.
+Again, the above example is based on an hypothetical case in which the computer being investigated is ***server001***, the case ref. is ***20260402***, and the forensic workstation's local user account is ***investigator***.
 
 ## footprint minimisation considerations
 For those especially conscious of the footprint resulting from downloading this file onto the target machine, a lightweight version of the script has been created. In this version, all non-essential information has been removed (e.g. comments, additional information etc.) so that the script uses minimal disc space. This version can be found in the repository, named br.sh. Deploy in the usual way (wget/via USB stick), make executable and run as follows:
