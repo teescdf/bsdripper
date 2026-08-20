@@ -1,5 +1,5 @@
 # *bsdripper (Work in Progress)*
-Script for live collection of data and triage of BSD-based systems. Offshoot of [*linuxripper*](https://github.com/teescdf/linuxripper) project.
+Script for live collection of data and triage of BSD-based systems. Offshoot of [*linuxripper*](https://github.com/teescdf/linuxripper) project. Work in progress - use with caution!
 
 ## acquiring and running *bsdripper*
 
