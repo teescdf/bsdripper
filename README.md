@@ -5,7 +5,7 @@ Script for live collection of data and triage of BSD-based systems. Offshoot of 
 
 The script can be downloaded directly onto a web-connected BSD computer with the following command:
 ```
-wget https://www.github.com/teescdf/bsdripper/bsdripper.sh
+wget https://github.com/teescdf/bsdripper/raw/refs/heads/main/bsdripper/bsdripper.sh
 ```
 Make the script executable with:
 ```
@@ -56,14 +56,16 @@ scp 20260402_server001.tar.gz investigator@server001:/home/investigator/Desktop
 ```
 Again, the above example is based on an hypothetical case in which the computer being investigated is ***server001***, the case ref. is ***20260402***, and the forensic workstation's local user account is ***investigator***.
 
-## footprint minimisation considerations
+<!-- ## footprint minimisation considerations...STILL TO DO!
 For those especially conscious of the footprint resulting from downloading this file onto the target machine, a lightweight version of the script has been created. In this version, all non-essential information has been removed (e.g. comments, additional information etc.) so that the script uses minimal disc space. This version can be found in the repository, named br.sh. Deploy in the usual way (wget/via USB stick), make executable and run as follows:
 
 ```
-wget https://www.github.com/teescdf/bsdripper/br.sh
+wget https://github.com/teescdf/bsdripper/raw/refs/heads/main/bsdripper/br.sh
               [[or deploy via USB]]
 ```
 ```
 chmod +x br.sh
 sh br.sh
               [[logfile creation with "2>&1 | tee -a logfile.txt" entirely optional]]
+-->
+.
